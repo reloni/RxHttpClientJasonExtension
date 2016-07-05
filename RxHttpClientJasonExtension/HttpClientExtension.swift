@@ -18,7 +18,7 @@ public extension HttpClientProtocol {
 				//guard let object = self else { observer.onCompleted(); return NopDisposable.instance }
 				let task = self.loadData(request).bindNext { result in
 					if case .successData(let data) = result {
-						observer.onNext(Result.success(Box(value: JSON(arrayLiteral: data))))
+						observer.onNext(Result.success(Box(value: JSON(data))))
 					} else if case .error(let error) = result {
 						observer.onNext(Result.error(error))
 						observer.onCompleted()

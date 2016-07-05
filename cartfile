@@ -1,3 +1,4 @@
 github "ReactiveX/RxSwift" == 2.6
 github "delba/JASON" == 2.2.1
 github "Reloni/RxHttpClient" == 0.1
+github "AliSoftware/OHHTTPStubs" == 5.1.0
