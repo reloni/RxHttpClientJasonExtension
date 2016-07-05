@@ -15,6 +15,7 @@
 		6E2B76251D2BA595009EB848 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761C1D2BA4F8009EB848 /* RxCocoa.framework */; };
 		6E2B76261D2BA595009EB848 /* RxHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761D1D2BA4F8009EB848 /* RxHttpClient.framework */; };
 		6E2B76271D2BA595009EB848 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761E1D2BA4F8009EB848 /* RxSwift.framework */; };
+		6E2B76291D2BAC64009EB848 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B76281D2BAC64009EB848 /* OHHTTPStubs.framework */; };
 		6E4A234F1D2A901200C4A1DA /* HttpClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A234E1D2A901200C4A1DA /* HttpClientExtension.swift */; };
 		6ECC2D611D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */; };
@@ -36,6 +37,7 @@
 		6E2B761D1D2BA4F8009EB848 /* RxHttpClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxHttpClient.framework; path = Dependencies/iOS/RxHttpClient.framework; sourceTree = "<group>"; };
 		6E2B761E1D2BA4F8009EB848 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Dependencies/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		6E2B76221D2BA507009EB848 /* JASON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JASON.framework; path = Dependencies/iOS/JASON.framework; sourceTree = "<group>"; };
+		6E2B76281D2BAC64009EB848 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Dependencies/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		6E4A234E1D2A901200C4A1DA /* HttpClientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClientExtension.swift; sourceTree = "<group>"; };
 		6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxHttpClientJasonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxHttpClientJasonExtension.h; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2B76291D2BAC64009EB848 /* OHHTTPStubs.framework in Frameworks */,
 				6E2B76251D2BA595009EB848 /* RxCocoa.framework in Frameworks */,
 				6E2B76261D2BA595009EB848 /* RxHttpClient.framework in Frameworks */,
 				6E2B76271D2BA595009EB848 /* RxSwift.framework in Frameworks */,
@@ -75,6 +78,7 @@
 		6ECC2D531D2A8E5E00E66B47 = {
 			isa = PBXGroup;
 			children = (
+				6E2B76281D2BAC64009EB848 /* OHHTTPStubs.framework */,
 				6E2B76221D2BA507009EB848 /* JASON.framework */,
 				6E2B761C1D2BA4F8009EB848 /* RxCocoa.framework */,
 				6E2B761D1D2BA4F8009EB848 /* RxHttpClient.framework */,
@@ -247,6 +251,7 @@
 				"$(SRCROOT)/Dependencies/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Dependencies/iOS/JASON.framework",
 				"$(SRCROOT)/Dependencies/iOS/RxHttpClient.framework",
+				"$(SRCROOT)/Dependencies/iOS/OHHTTPStubs.framework",
 			);
 			name = "Copy carthage frameworks";
 			outputPaths = (
