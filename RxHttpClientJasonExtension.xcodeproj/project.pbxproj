@@ -140,6 +140,7 @@
 				6ECC2D5A1D2A8E5E00E66B47 /* Headers */,
 				6ECC2D5B1D2A8E5E00E66B47 /* Resources */,
 				6E4A234C1D2A8EF800C4A1DA /* Copy carthage frameworks */,
+				6EDC4AB51D2FB15F002052B5 /* Copy submodule frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +260,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		6EDC4AB51D2FB15F002052B5 /* Copy submodule frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy submodule frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh ${SRCROOT}/Scripts/CopySubmoduleFrameworks.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
