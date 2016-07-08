@@ -11,8 +11,8 @@ import RxHttpClient
 import RxSwift
 import JASON
 
-public extension HttpClientProtocol {
-	public func loadJsonData(request: NSMutableURLRequestProtocol)
+public extension HttpClientType {
+	public func loadJsonData(request: NSMutableURLRequestType)
 		-> Observable<Result<JSON>> {
 			return Observable.create { observer in
 				//guard let object = self else { observer.onCompleted(); return NopDisposable.instance }
