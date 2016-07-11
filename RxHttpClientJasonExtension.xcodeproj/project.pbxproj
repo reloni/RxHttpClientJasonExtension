@@ -139,7 +139,6 @@
 				6ECC2D591D2A8E5E00E66B47 /* Frameworks */,
 				6ECC2D5A1D2A8E5E00E66B47 /* Headers */,
 				6ECC2D5B1D2A8E5E00E66B47 /* Resources */,
-				6E4A234C1D2A8EF800C4A1DA /* Copy carthage frameworks */,
 				6EDC4AB51D2FB15F002052B5 /* Copy submodule frameworks */,
 			);
 			buildRules = (
@@ -224,24 +223,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6E4A234C1D2A8EF800C4A1DA /* Copy carthage frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Dependencies/iOS/RxSwift.framework",
-				"$(SRCROOT)/Dependencies/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Dependencies/iOS/JASON.framework",
-				"$(SRCROOT)/Dependencies/iOS/RxHttpClient.framework",
-			);
-			name = "Copy carthage frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		6E4A234D1D2A8F9A00C4A1DA /* Copy carthage frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -273,7 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh ${SRCROOT}/Scripts/CopySubmoduleFrameworks.sh";
+			shellScript = "/bin/sh ${SRCROOT}/Scripts/CopyInDevelopmentFrameworks.sh $BUILD_DIR";
 		};
 /* End PBXShellScriptBuildPhase section */
 
