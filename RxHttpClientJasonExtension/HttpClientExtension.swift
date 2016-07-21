@@ -12,8 +12,17 @@ import RxSwift
 import JASON
 
 public extension HttpClientType {
-	public func loadJsonData(request: NSMutableURLRequestType)
+	public func loadJsonData(request: NSURLRequestType)
 		-> Observable<Result<JSON>> {
+			/*
+			return loadData(request).flatMapLatest { result -> Observable<Result<JSON>> in
+				switch result {
+				case .successData(let data): return Observable.just(Result.success(Box(value: JSON(data))))
+				case .error(let error): return Observable.just(Result.error(error))
+				default: return Observable.empty()
+				}
+			}
+			*/
 			return Observable.create { observer in
 				//guard let object = self else { observer.onCompleted(); return NopDisposable.instance }
 				let task = self.loadData(request).bindNext { result in
