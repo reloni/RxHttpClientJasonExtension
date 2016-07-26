@@ -28,13 +28,10 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 		let bag = DisposeBag()
 		
 		let expectation = expectationWithDescription("Should return correct JSON")
-		client.loadJsonData(request).bindNext { e in
-			if case Result.success(let box) = e {
-				let json = box.value
-				XCTAssertEqual("Data1", json["Field1"].stringValue)
-				XCTAssertEqual("Data2", json["Field2"].stringValue)
-				expectation.fulfill()
-			}
+		client.loadJsonData(request).bindNext { json in
+			XCTAssertEqual("Data1", json["Field1"].stringValue)
+			XCTAssertEqual("Data2", json["Field2"].stringValue)
+			expectation.fulfill()
 		}.addDisposableTo(bag)
 		
 		waitForExpectationsWithTimeout(1, handler: nil)
@@ -50,13 +47,12 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 		let bag = DisposeBag()
 		
 		let expectation = expectationWithDescription("Should return correct JSON")
-		client.loadJsonData(request).bindNext { e in
-			if case Result.error(let error as NSError) = e {
-				XCTAssertEqual(error.code, 1)
-				XCTAssertEqual(error.domain, "TestDomain")
-				expectation.fulfill()
-			}
-		}.addDisposableTo(bag)
+		client.loadJsonData(request).doOnError { error in
+			let error = error as NSError
+			XCTAssertEqual(error.code, 1)
+			XCTAssertEqual(error.domain, "TestDomain")
+			expectation.fulfill()
+		}.subscribe().addDisposableTo(bag)
 		
 		waitForExpectationsWithTimeout(1, handler: nil)
 	}
