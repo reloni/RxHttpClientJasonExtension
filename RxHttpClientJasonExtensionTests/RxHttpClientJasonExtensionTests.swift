@@ -24,15 +24,32 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 		}
 		
 		let client = HttpClient()
-		let request = NSMutableURLRequest(URL: NSURL(baseUrl: "https://test.com/json", parameters: nil)!)
+		let url = NSURL(baseUrl: "https://test.com/json", parameters: nil)!
 		let bag = DisposeBag()
 		
 		let expectation = expectationWithDescription("Should return correct JSON")
-		client.loadJsonData(request).bindNext { json in
+		client.loadJsonData(url).bindNext { json in
 			XCTAssertEqual("Data1", json["Field1"].stringValue)
 			XCTAssertEqual("Data2", json["Field2"].stringValue)
 			expectation.fulfill()
 		}.addDisposableTo(bag)
+		
+		waitForExpectationsWithTimeout(1, handler: nil)
+	}
+	
+	func testNotReturnJsonIfNoDataProvided() {
+		stub({ $0.URL?.absoluteString == "https://test.com/json"	}) { _ in
+			return OHHTTPStubsResponse(data: NSData(), statusCode: 200, headers: nil)
+		}
+		
+		let client = HttpClient()
+		let url = NSURL(baseUrl: "https://test.com/json", parameters: nil)!
+		let bag = DisposeBag()
+		
+		let expectation = expectationWithDescription("Should not return JSON")
+		client.loadJsonData(url).doOnCompleted { expectation.fulfill() }.bindNext { _ in
+			XCTFail("Should not return json data")
+			}.addDisposableTo(bag)
 		
 		waitForExpectationsWithTimeout(1, handler: nil)
 	}
@@ -43,11 +60,11 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 		}
 		
 		let client = HttpClient()
-		let request = NSMutableURLRequest(URL: NSURL(baseUrl: "https://test.com/json", parameters: nil)!)
+		let url = NSURL(baseUrl: "https://test.com/json", parameters: nil)!
 		let bag = DisposeBag()
 		
 		let expectation = expectationWithDescription("Should return correct JSON")
-		client.loadJsonData(request).doOnError { error in
+		client.loadJsonData(url).doOnError { error in
 			let error = error as NSError
 			XCTAssertEqual(error.code, 1)
 			XCTAssertEqual(error.domain, "TestDomain")
