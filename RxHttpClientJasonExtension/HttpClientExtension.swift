@@ -12,15 +12,23 @@ import RxSwift
 import JASON
 
 public extension HttpClientType {
-	public func loadJsonData(request: NSURLRequestType)
-		-> Observable<JSON> {
-			
-			return loadData(request).flatMapLatest { result -> Observable<JSON> in
-				switch result {
-				case .successData(let data): return Observable.just(JSON(data))
-				case .error(let error): return Observable.error(error)
-				default: return Observable.empty()
-				}
+	/**
+	Loads data and convert to JSON
+	- parameter url: URL for HTTP request
+	- returns: Created observable sequence that emits JSON
+	*/
+	func loadJsonData(url: NSURL) -> Observable<JSON> {
+		return loadJsonData(createUrlRequest(url))
+	}
+	
+	/**
+	Loads data and convert to JSON
+	- parameter url: URL request
+	- returns: Created observable sequence that emits JSON
+	*/
+	func loadJsonData(request: NSURLRequest) -> Observable<JSON> {
+			return loadData(request).flatMapLatest { data -> Observable<JSON> in
+				return data.length == 0 ? Observable.empty() : Observable.just(JSON(data))
 			}
 	}
 }
