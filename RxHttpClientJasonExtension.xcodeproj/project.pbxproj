@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6E4A234F1D2A901200C4A1DA /* HttpClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A234E1D2A901200C4A1DA /* HttpClientExtension.swift */; };
+		6E816DE11D579C63003C38E1 /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DDE1D579C63003C38E1 /* JASON.framework */; };
+		6E816DE21D579C63003C38E1 /* RxHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DDF1D579C63003C38E1 /* RxHttpClient.framework */; };
+		6E816DE31D579C63003C38E1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DE01D579C63003C38E1 /* RxSwift.framework */; };
 		6ECC2D611D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */; };
 		6ECC2D6D1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC2D6C1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift */; };
-		6EDC26CA1D57941E008486F9 /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC26C71D57941E008486F9 /* JASON.framework */; };
-		6EDC26CB1D57941E008486F9 /* RxHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC26C81D57941E008486F9 /* RxHttpClient.framework */; };
-		6EDC26CC1D57941E008486F9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC26C91D57941E008486F9 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,15 +28,15 @@
 
 /* Begin PBXFileReference section */
 		6E4A234E1D2A901200C4A1DA /* HttpClientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClientExtension.swift; sourceTree = "<group>"; };
+		6E816DDE1D579C63003C38E1 /* JASON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JASON.framework; path = Carthage/Build/iOS/JASON.framework; sourceTree = "<group>"; };
+		6E816DDF1D579C63003C38E1 /* RxHttpClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxHttpClient.framework; path = Carthage/Build/iOS/RxHttpClient.framework; sourceTree = "<group>"; };
+		6E816DE01D579C63003C38E1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxHttpClientJasonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxHttpClientJasonExtension.h; sourceTree = "<group>"; };
 		6ECC2D621D2A8E5E00E66B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ECC2D671D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxHttpClientJasonExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECC2D6C1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHttpClientJasonExtensionTests.swift; sourceTree = "<group>"; };
 		6ECC2D6E1D2A8E5E00E66B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EDC26C71D57941E008486F9 /* JASON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JASON.framework; path = Carthage/Build/iOS/JASON.framework; sourceTree = "<group>"; };
-		6EDC26C81D57941E008486F9 /* RxHttpClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxHttpClient.framework; path = Carthage/Build/iOS/RxHttpClient.framework; sourceTree = "<group>"; };
-		6EDC26C91D57941E008486F9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EDC26CA1D57941E008486F9 /* JASON.framework in Frameworks */,
-				6EDC26CB1D57941E008486F9 /* RxHttpClient.framework in Frameworks */,
-				6EDC26CC1D57941E008486F9 /* RxSwift.framework in Frameworks */,
+				6E816DE11D579C63003C38E1 /* JASON.framework in Frameworks */,
+				6E816DE21D579C63003C38E1 /* RxHttpClient.framework in Frameworks */,
+				6E816DE31D579C63003C38E1 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,9 +64,9 @@
 		6ECC2D531D2A8E5E00E66B47 = {
 			isa = PBXGroup;
 			children = (
-				6EDC26C71D57941E008486F9 /* JASON.framework */,
-				6EDC26C81D57941E008486F9 /* RxHttpClient.framework */,
-				6EDC26C91D57941E008486F9 /* RxSwift.framework */,
+				6E816DDE1D579C63003C38E1 /* JASON.framework */,
+				6E816DDF1D579C63003C38E1 /* RxHttpClient.framework */,
+				6E816DE01D579C63003C38E1 /* RxSwift.framework */,
 				6ECC2D5F1D2A8E5E00E66B47 /* RxHttpClientJasonExtension */,
 				6ECC2D6B1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests */,
 				6ECC2D5E1D2A8E5E00E66B47 /* Products */,
@@ -123,7 +123,6 @@
 				6ECC2D591D2A8E5E00E66B47 /* Frameworks */,
 				6ECC2D5A1D2A8E5E00E66B47 /* Headers */,
 				6ECC2D5B1D2A8E5E00E66B47 /* Resources */,
-				6EDC4AB51D2FB15F002052B5 /* Copy submodule frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,20 +224,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		6EDC4AB51D2FB15F002052B5 /* Copy submodule frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy submodule frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "developmentRxHttpClient=$BUILD_DIR/Debug-iphonesimulator/RxHttpClient.framework\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\ncp -R developmentRxHttpClient ./Carthage/Build/iOS 2>/dev/null || :\nfi\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
