@@ -7,19 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E2B761F1D2BA4F8009EB848 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761C1D2BA4F8009EB848 /* RxCocoa.framework */; };
-		6E2B76201D2BA4F8009EB848 /* RxHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761D1D2BA4F8009EB848 /* RxHttpClient.framework */; };
-		6E2B76211D2BA4F8009EB848 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761E1D2BA4F8009EB848 /* RxSwift.framework */; };
-		6E2B76231D2BA507009EB848 /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B76221D2BA507009EB848 /* JASON.framework */; };
-		6E2B76241D2BA589009EB848 /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B76221D2BA507009EB848 /* JASON.framework */; };
-		6E2B76251D2BA595009EB848 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761C1D2BA4F8009EB848 /* RxCocoa.framework */; };
-		6E2B76261D2BA595009EB848 /* RxHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761D1D2BA4F8009EB848 /* RxHttpClient.framework */; };
-		6E2B76271D2BA595009EB848 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B761E1D2BA4F8009EB848 /* RxSwift.framework */; };
-		6E2B76291D2BAC64009EB848 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B76281D2BAC64009EB848 /* OHHTTPStubs.framework */; };
 		6E4A234F1D2A901200C4A1DA /* HttpClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A234E1D2A901200C4A1DA /* HttpClientExtension.swift */; };
 		6ECC2D611D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */; };
 		6ECC2D6D1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC2D6C1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift */; };
+		6EDC26CA1D57941E008486F9 /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC26C71D57941E008486F9 /* JASON.framework */; };
+		6EDC26CB1D57941E008486F9 /* RxHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC26C81D57941E008486F9 /* RxHttpClient.framework */; };
+		6EDC26CC1D57941E008486F9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC26C91D57941E008486F9 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E2B761C1D2BA4F8009EB848 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Dependencies/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		6E2B761D1D2BA4F8009EB848 /* RxHttpClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxHttpClient.framework; path = Dependencies/iOS/RxHttpClient.framework; sourceTree = "<group>"; };
-		6E2B761E1D2BA4F8009EB848 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Dependencies/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		6E2B76221D2BA507009EB848 /* JASON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JASON.framework; path = Dependencies/iOS/JASON.framework; sourceTree = "<group>"; };
-		6E2B76281D2BAC64009EB848 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Dependencies/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		6E4A234E1D2A901200C4A1DA /* HttpClientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClientExtension.swift; sourceTree = "<group>"; };
 		6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxHttpClientJasonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxHttpClientJasonExtension.h; sourceTree = "<group>"; };
@@ -45,6 +34,9 @@
 		6ECC2D671D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxHttpClientJasonExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECC2D6C1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHttpClientJasonExtensionTests.swift; sourceTree = "<group>"; };
 		6ECC2D6E1D2A8E5E00E66B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EDC26C71D57941E008486F9 /* JASON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JASON.framework; path = Carthage/Build/iOS/JASON.framework; sourceTree = "<group>"; };
+		6EDC26C81D57941E008486F9 /* RxHttpClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxHttpClient.framework; path = Carthage/Build/iOS/RxHttpClient.framework; sourceTree = "<group>"; };
+		6EDC26C91D57941E008486F9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2B76231D2BA507009EB848 /* JASON.framework in Frameworks */,
-				6E2B761F1D2BA4F8009EB848 /* RxCocoa.framework in Frameworks */,
-				6E2B76201D2BA4F8009EB848 /* RxHttpClient.framework in Frameworks */,
-				6E2B76211D2BA4F8009EB848 /* RxSwift.framework in Frameworks */,
+				6EDC26CA1D57941E008486F9 /* JASON.framework in Frameworks */,
+				6EDC26CB1D57941E008486F9 /* RxHttpClient.framework in Frameworks */,
+				6EDC26CC1D57941E008486F9 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,11 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2B76291D2BAC64009EB848 /* OHHTTPStubs.framework in Frameworks */,
-				6E2B76251D2BA595009EB848 /* RxCocoa.framework in Frameworks */,
-				6E2B76261D2BA595009EB848 /* RxHttpClient.framework in Frameworks */,
-				6E2B76271D2BA595009EB848 /* RxSwift.framework in Frameworks */,
-				6E2B76241D2BA589009EB848 /* JASON.framework in Frameworks */,
 				6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,11 +64,9 @@
 		6ECC2D531D2A8E5E00E66B47 = {
 			isa = PBXGroup;
 			children = (
-				6E2B76281D2BAC64009EB848 /* OHHTTPStubs.framework */,
-				6E2B76221D2BA507009EB848 /* JASON.framework */,
-				6E2B761C1D2BA4F8009EB848 /* RxCocoa.framework */,
-				6E2B761D1D2BA4F8009EB848 /* RxHttpClient.framework */,
-				6E2B761E1D2BA4F8009EB848 /* RxSwift.framework */,
+				6EDC26C71D57941E008486F9 /* JASON.framework */,
+				6EDC26C81D57941E008486F9 /* RxHttpClient.framework */,
+				6EDC26C91D57941E008486F9 /* RxSwift.framework */,
 				6ECC2D5F1D2A8E5E00E66B47 /* RxHttpClientJasonExtension */,
 				6ECC2D6B1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests */,
 				6ECC2D5E1D2A8E5E00E66B47 /* Products */,
@@ -229,11 +213,11 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Dependencies/iOS/RxSwift.framework",
-				"$(SRCROOT)/Dependencies/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Dependencies/iOS/JASON.framework",
-				"$(SRCROOT)/Dependencies/iOS/RxHttpClient.framework",
-				"$(SRCROOT)/Dependencies/iOS/OHHTTPStubs.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JASON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxHttpClient.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
 			);
 			name = "Copy carthage frameworks";
 			outputPaths = (
@@ -254,7 +238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh ${SRCROOT}/Scripts/CopyInDevelopmentFrameworks.sh $BUILD_DIR";
+			shellScript = "developmentRxHttpClient=$BUILD_DIR/Debug-iphonesimulator/RxHttpClient.framework\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\ncp -R developmentRxHttpClient ./Carthage/Build/iOS 2>/dev/null || :\nfi\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -387,7 +371,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Dependencies/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RxHttpClientJasonExtension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -409,7 +393,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Dependencies/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RxHttpClientJasonExtension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -425,7 +409,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Dependencies/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RxHttpClientJasonExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -439,7 +423,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Dependencies/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RxHttpClientJasonExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
