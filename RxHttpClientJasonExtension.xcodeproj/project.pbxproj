@@ -14,6 +14,7 @@
 		6ECC2D611D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */; };
 		6ECC2D6D1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC2D6C1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift */; };
+		6ED40E2C1D57A0E300A79E5C /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DDE1D579C63003C38E1 /* JASON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED40E2C1D57A0E300A79E5C /* JASON.framework in Frameworks */,
 				6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
