@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6E4A234F1D2A901200C4A1DA /* HttpClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4A234E1D2A901200C4A1DA /* HttpClientExtension.swift */; };
-		6E816DE11D579C63003C38E1 /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DDE1D579C63003C38E1 /* JASON.framework */; };
 		6E816DE21D579C63003C38E1 /* RxHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DDF1D579C63003C38E1 /* RxHttpClient.framework */; };
-		6E816DE31D579C63003C38E1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DE01D579C63003C38E1 /* RxSwift.framework */; };
 		6ECC2D611D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECC2D601D2A8E5E00E66B47 /* RxHttpClientJasonExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECC2D5D1D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework */; };
 		6ECC2D6D1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC2D6C1D2A8E5E00E66B47 /* RxHttpClientJasonExtensionTests.swift */; };
-		6ED40E2C1D57A0E300A79E5C /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E816DDE1D579C63003C38E1 /* JASON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E816DE11D579C63003C38E1 /* JASON.framework in Frameworks */,
 				6E816DE21D579C63003C38E1 /* RxHttpClient.framework in Frameworks */,
-				6E816DE31D579C63003C38E1 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED40E2C1D57A0E300A79E5C /* JASON.framework in Frameworks */,
 				6ECC2D681D2A8E5E00E66B47 /* RxHttpClientJasonExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

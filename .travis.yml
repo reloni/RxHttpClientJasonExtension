@@ -23,10 +23,11 @@ before_script:
 
 # update OHHTTPStubs using carthage
 - carthage update OHHTTPStubs --platform iOS
-# using punic to build RxSwift framework
+# use punic to build RxSwift framework
 - punic build RxSwift --platform iOS --configuration Release
-
+# build other frameworks with carthage
 - carthage update RxHttpClient --platform iOS
+- carthage update JASON --platform iOS
 
 script:
 - open -a "simulator" --args -CurrentDeviceUDID $SIMULATOR_ID
