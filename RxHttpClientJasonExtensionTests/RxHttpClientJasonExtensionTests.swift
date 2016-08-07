@@ -34,7 +34,7 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 			expectation.fulfill()
 		}.addDisposableTo(bag)
 		
-		waitForExpectationsWithTimeout(1, handler: nil)
+		waitForExpectationsWithTimeout(2, handler: nil)
 	}
 	
 	func testNotReturnJsonIfNoDataProvided() {
@@ -51,7 +51,7 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 			XCTFail("Should not return json data")
 			}.addDisposableTo(bag)
 		
-		waitForExpectationsWithTimeout(1, handler: nil)
+		waitForExpectationsWithTimeout(2, handler: nil)
 	}
 	
 	func testReturnError() {
@@ -71,6 +71,6 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 			expectation.fulfill()
 		}.subscribe().addDisposableTo(bag)
 		
-		waitForExpectationsWithTimeout(1, handler: nil)
+		waitForExpectationsWithTimeout(2, handler: nil)
 	}
 }
