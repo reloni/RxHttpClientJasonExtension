@@ -27,12 +27,8 @@ public extension HttpClientType {
 	- returns: Created observable sequence that emits JSON
 	*/
 	func loadJsonData(request: NSURLRequest) -> Observable<JSON> {
-			return loadData(request).flatMapLatest { result -> Observable<JSON> in
-				switch result {
-				case .successData(let data): return Observable.just(JSON(data))
-				case .error(let error): return Observable.error(error)
-				default: return Observable.empty()
-				}
+			return loadData(request).flatMapLatest { data -> Observable<JSON> in
+				return data.length == 0 ? Observable.empty() : Observable.just(JSON(data))
 			}
 	}
 }
