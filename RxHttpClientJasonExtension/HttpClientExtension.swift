@@ -12,24 +12,23 @@ import RxSwift
 import JASON
 
 public extension HttpClientType {
-	public func loadJsonData(request: NSMutableURLRequestType)
-		-> Observable<Result<JSON>> {
-			return Observable.create { observer in
-				//guard let object = self else { observer.onCompleted(); return NopDisposable.instance }
-				let task = self.loadData(request).bindNext { result in
-					if case .successData(let data) = result {
-						observer.onNext(Result.success(Box(value: JSON(data))))
-					} else if case .error(let error) = result {
-						observer.onNext(Result.error(error))
-						observer.onCompleted()
-					}
-					
-					observer.onCompleted()
-				}
-				
-				return AnonymousDisposable {
-					task.dispose()
-				}
-				}.shareReplay(0)
+	/**
+	Loads data and convert to JSON
+	- parameter url: URL for HTTP request
+	- returns: Created observable sequence that emits JSON
+	*/
+	func loadJsonData(url: NSURL) -> Observable<JSON> {
+		return loadJsonData(createUrlRequest(url))
+	}
+	
+	/**
+	Loads data and convert to JSON
+	- parameter url: URL request
+	- returns: Created observable sequence that emits JSON
+	*/
+	func loadJsonData(request: NSURLRequest) -> Observable<JSON> {
+			return loadData(request).flatMapLatest { data -> Observable<JSON> in
+				return data.length == 0 ? Observable.empty() : Observable.just(JSON(data))
+			}
 	}
 }
