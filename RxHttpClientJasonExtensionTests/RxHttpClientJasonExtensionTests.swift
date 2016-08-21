@@ -65,9 +65,9 @@ class RxHttpClientJasonExtensionTests: XCTestCase {
 		
 		let expectation = expectationWithDescription("Should return correct JSON")
 		client.loadJsonData(url).doOnError { error in
-			let error = error as NSError
-			XCTAssertEqual(error.code, 1)
-			XCTAssertEqual(error.domain, "TestDomain")
+			guard case HttpClientError.ClientSideError(let clientError) = error else { return }
+			XCTAssertEqual(clientError.code, 1)
+			XCTAssertEqual(clientError.domain, "TestDomain")
 			expectation.fulfill()
 		}.subscribe().addDisposableTo(bag)
 		
